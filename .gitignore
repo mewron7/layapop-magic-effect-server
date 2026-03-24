@@ -1,0 +1,8 @@
+venv/
+venv.nosync/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+uploads/
+outputs/
