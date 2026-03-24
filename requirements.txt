@@ -1,0 +1,11 @@
+# Web Server Framework
+fastapi
+uvicorn
+python-multipart
+pydantic
+
+# Computer Vision & Effects
+opencv-python-headless<4.10
+opencv-contrib-python-headless<4.10
+numpy<2.0.0
+mediapipe>=0.10.0
