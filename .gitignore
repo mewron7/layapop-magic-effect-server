@@ -4,5 +4,5 @@ venv.nosync/
 __pycache__/
 *.pyc
 .DS_Store
-uploads/
-outputs/
+uploads*/
+outputs*/

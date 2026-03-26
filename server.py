@@ -33,13 +33,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Directories
-UPLOAD_DIR = "uploads"
-OUTPUT_DIR = "outputs"
+# Directories (ending in .nosync so iCloud ignores them and doesn't freeze the Mac)
+UPLOAD_DIR = "uploads.nosync"
+OUTPUT_DIR = "outputs.nosync"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Mount static files to serve outputs
+# Mount static files to serve outputs (URL is still just /outputs)
 app.mount("/outputs", StaticFiles(directory=OUTPUT_DIR), name="outputs")
 
 @app.post("/process-effect")
