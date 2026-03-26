@@ -539,7 +539,7 @@ class ExplosionPaintRenderer:
         
         # STREAMING WRITE - open writer first ⭐⭐⭐
         logger.info("Starting streaming video write...")
-        fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+        fourcc = cv2.VideoWriter_fourcc(*'avc1')
         out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
         
         if not out.isOpened():
